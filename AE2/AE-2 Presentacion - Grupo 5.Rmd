@@ -1,0 +1,129 @@
+---
+title: |
+  ![](logo_UNAB.png){width=0.5in}  
+  Actividad Evaluativa #2   
+  Grupo 5
+subtitle: "Facultad de Ingeniería"
+author: |
+  Martín Fernández  
+  Tomás Moya  
+  Wesly Ocampo  
+  Alan Tovar  
+institute: |
+  Universidad Andrés Bello  
+  Ingeniería Civil Informática  
+  Ingeniería Civil Industrial
+date: "Octubre 2022"
+output:
+  beamer_presentation:
+    theme: "Hannover"
+    colortheme: "wolverine"
+    fonttheme: "structurebold"
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introducción
+
+- Regresión Lineal Múltiple.
+
+![Introducción.](data_analisis.jpg){width="300px"}
+
+
+
+## Variable Dependiente y Variables Independientes
+
+### Variable Dependiente: 
+- "Rented_Bike_Count"
+
+### Variables Independientes:
+
+
+
+
+::: columns
+
+:::: column
+\begingroup
+
+\fontfamily{phv}\fontsize{9}{16}\selectfont
+
+- Temperature
+- Humidity
+- Windspeed
+- Visibility
+- Dew_point_temperature
+
+
+\endgroup
+::::
+
+:::: column
+\begingroup
+
+\fontfamily{phv}\fontsize{9}{16}\selectfont
+- Solar_Radiation
+- Rainfall
+- Snowfall
+- Seasons
+- Holiday
+
+\endgroup
+::::
+
+:::
+
+### Variables Categóricas eliminadas:
+ - Date, Seasons, Holiday, Functioning_Day
+
+
+## Análisis Componentes Principales
+
+![Porcentaje explicado por la variabilidad de los datos.](cp1.png){width="400px"}
+
+## Análisis Componentes Principales
+
+![Contribución de cada Variable.](cp2.png){width="300px"}
+
+## Primer Modelo y Tabla Resumen
+
+![Modelo 1.](m1.png){width="300px"}
+
+
+## Primer Modelo y Tabla Resumen
+
+### Shapiro-Wilk normality test  
+- W = 0.97948, p-value < 2.2e-16  
+
+![Q-Q plot Modelo 1.](qq.png){width="350px"}
+
+
+## Segundo Modelo y Tabla Resumen
+
+![Modelo 2.](m2.png){width="300px"}
+
+## Evaluación de Desempeño
+
+
+![Comparación de los Modelos.](compare.png){width="200px"}
+
+
+
+
+
+
+
+## Evaluación de Desempeño
+
+![Comparación de los Modelos.](compare_g.png){width="400px"}
+
+## Conclusiones
+
+### Concluyendo la presentación llegamos a los siguientes puntos importantes.
+- No existe Normalidad en ninguno de los modelos.
+- En el Modelo 2 logramos que todas las variables sean significativas.
+- La Variabilidad de nuestro mejor modelo es entre regular y baja.
+- Modelo 2 es mejor que el primer modelo por unas pocas décimas.
